@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Welcome</title>
-  </head>
-  <body>
-    <div class="grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 bg-blue-950 p-2">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Welcome</title>
+</head>
+
+<body class="bg-blue-950 min-h-full">
+  <header>
+    <div class="bg-blue-500 grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 p-2">
       <div class="col-span-1 flex justify-center">
         <img class="w-5 mr-1" src="./src/images/menu-logo.svg" alt="m-log">
         <a class="font-bold text-xl text-white" href="./src/html/Menu.html">
-           Menu
+          Menu
         </a>
       </div>
       <div class="col-span-1 flex justify-center">
@@ -35,11 +38,53 @@
       <div class="hidden md:block col-span-2 xl:hidden"></div>
       <div class="hidden xl:block col-span-4"></div>
       <div class="flex justify-end">
-        <img class="w-5 mr-1" src="./src/images/facebook.svg" alt="fb">
+        <a href="https://www.facebook.com"><img class="w-5 mr-1" src="./src/images/facebook.svg" alt="fb"></a>
       </div>
       <div class="flex justify-center">
-        <img class="w-5 mr-1" src="./src/images/instagram.svg" alt="insta">
+        <a href="https://www.instagram.com"><img class="w-5 mr-1" src="./src/images/instagram.svg" alt="insta"></a>
       </div>
     </div>
-  </body>
+  </header>
+  <div
+    class="bg-[url('https://img.freepik.com/photos-gratuite/ramen-nouilles-japonaises-table_1232-2214.jpg?w=740&t=st=1717488012~exp=1717488612~hmac=18110bc44bc91f50689bdcfc9b2bfa87f56934c2e3368b973a90bc599f21f969')] h-96 bg-cover bg-center relative">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="flex justify-center items-center absolute inset-0">
+      <span class="text-white font-bold text-xl border rounded-xl p-2">
+        <a href="./src/html/Restaurant.html">Shanghai Noodle Bar</a>
+      </span>
+    </div>
+  </div>
+  <div class="grid grid-cols-12">
+    <div class="col-span-6 grid grid-cols-6 ">
+      <div class="col-span-6 border-r-4">
+        <span class="py-4 text-white flex justify-center border-b-4 bg-blue-500">Promo</span>
+      </div>
+      <div class="col-span-6 text-white border-r-4 pl-4 pr-4 py-6 border-b-4">Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Veritatis modi hic blanditiis nam, ipsam corporis cupiditate, reiciendis architecto
+        repudiandae totam nostrum esse, nisi voluptates corrupti animi molestiae fugit consequuntur omnis. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Soluta deleniti accusamus cum porro esse! Excepturi earum vitae
+        voluptatum, dignissimos omnis expedita reiciendis facere, harum porro, possimus magni commodi reprehenderit
+        velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nostrum ullam quaerat assumenda
+        molestiae debitis accusantium architecto magni provident deleniti maiores pariatur aliquam reprehenderit quidem
+        laudantium ipsam iure blanditiis corrupti.</div>
+    </div>
+    <div class="col-span-6 grid grid-cols-6">
+      <div class="col-span-6 border-l-4">
+        <span class="py-4 text-white flex justify-center border-b-4 bg-blue-500">Event</span>
+      </div>
+      <div class="col-span-6 text-white border-l-4 pl-4 pr-4 py-6 border-b-4">Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Veritatis modi hic blanditiis nam, ipsam corporis cupiditate, reiciendis architecto
+        repudiandae totam nostrum esse, nisi voluptates corrupti animi molestiae fugit consequuntur omnis. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Soluta deleniti accusamus cum porro esse! Excepturi earum vitae
+        voluptatum, dignissimos omnis expedita reiciendis facere, harum porro, possimus magni commodi reprehenderit
+        velit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nostrum ullam quaerat assumenda
+        molestiae debitis accusantium architecto magni provident deleniti maiores pariatur aliquam reprehenderit quidem
+        laudantium ipsam iure blanditiis corrupti.</div>
+    </div>
+  </div>
+  <div
+    class="h-60 bg-repeat bg-cover bg-center bg-[url('https://www.la-cuisine-japonaise.com/wp-content/uploads/sites/206/2014/06/nourriture-japonaise.jpg')]">
+  </div>
+</body>
+
 </html>
