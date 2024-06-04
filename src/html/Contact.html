@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contact</title>
 </head>
-<body>
-    
+
+<body class="bg-blue-900">
+    <header>
+        <div class="bg-blue-500 grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 p-2">
+            <div class="col-span-1 flex justify-center">
+                <img class="w-5 mr-1" src="../images/globe-solid.svg" alt="r-logo">
+                <a class="font-bold text-xl text-white" href="../../index.html">
+                    Welcome
+                </a>
+            </div>
+            <div class="col-span-1 flex justify-center">
+                <img class="w-5 mr-1" src="../images/menu-logo.svg" alt="m-log">
+                <a class="font-bold text-xl text-white" href="Menu.html">
+                    Menu
+                </a>
+            </div>
+            <div class="col-span-1 flex justify-center">
+                <img class="w-5 mr-1" src="../images/pictures-logo.svg" alt="p-logo">
+                <a class="font-bold text-xl text-white" href="Pictures.html">
+                    Pictures
+                </a>
+            </div>
+            <div class="col-span-1 flex justify-center">
+                <img class="w-5 mr-1" src="../images/utensils-solid.svg" alt="r-logo">
+                <a class="font-bold text-xl text-white" href="Restaurant.html">
+                    Restaurant
+                </a>
+            </div>
+
+            <div class="hidden md:block col-span-2 xl:hidden"></div>
+            <div class="hidden xl:block col-span-4"></div>
+            <div class="flex justify-end">
+                <a href="https://www.facebook.com"><img class="w-5 mr-1" src="../images/facebook.svg" alt="fb"></a>
+            </div>
+            <div class="flex justify-center">
+                <a href="https://www.instagram.com"><img class="w-5 mr-1" src="../images/instagram.svg" alt="insta"></a>
+            </div>
+        </div>
+    </header>
+    <div class="text-white flex justify-center min-h-full pt-5">
+        <form action="/submit-form" method="post">
+            <div class="p-2 grid grid-cols-2">
+                <label class="font-bold" for="last-name">Last Name :</label>
+                <input class="rounded-lg" type="text">
+            </div>
+            <div class="p-2 grid grid-cols-2">
+                <label class="font-bold" for="first-name">First Name :</label>
+                <input class="rounded-lg" type="text">
+            </div>
+            <div class="p-2 grid grid-cols-2">
+                <label class="font-bold" for="mail">E-mail :</label>
+                <input class="rounded-lg" type="text">
+            </div>
+            <div class="p-2 grid grid-cols-2">
+                <label class="font-bold" for="subject">Subject :</label>
+                <select class="text-black rounded-lg text-center" name="" id="">
+                    <option value="">La bouffe</option>
+                    <option value="">Le Personnel</option>
+                    <option value="">collaboration</option>
+                </select>
+            </div>
+            <div class="p-2 grid grid-cols-2">
+                <label class="font-bold" for="message">Message :</label>
+                <input class="rounded-lg h-32" type="text">
+            </div>
+            <button class="p-4 mt-5 font-bold border-4 rounded-lg w-full">
+                Send
+            </button>
+        </form>
+    </div>
 </body>
+
 </html>
