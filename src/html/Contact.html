@@ -4,78 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Contact</title>
 </head>
 
-<body class="bg-blue-900">
-    <header>
-        <div class="bg-blue-500 grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 p-2">
-            <div class="col-span-1 flex justify-center">
-                <img class="w-5 mr-1" src="/src/images/globe-solid.svg" alt="r-logo">
-                <a class="font-bold text-xl text-white" href="/restaurant-css-framework-vite/index.html">
-                    Welcome
-                </a>
-            </div>
-            <div class="col-span-1 flex justify-center">
-                <img class="w-5 mr-1" src="/src/images/menu-logo.svg" alt="m-log">
-                <a class="font-bold text-xl text-white" href="Menu.html">
-                    Menu
-                </a>
-            </div>
-            <div class="col-span-1 flex justify-center">
-                <img class="w-5 mr-1" src="/src/images/pictures-logo.svg" alt="p-logo">
-                <a class="font-bold text-xl text-white" href="Pictures.html">
-                    Pictures
-                </a>
-            </div>
-            <div class="col-span-1 flex justify-center">
-                <img class="w-5 mr-1" src="/src/images/utensils-solid.svg" alt="r-logo">
-                <a class="font-bold text-xl text-white" href="Restaurant.html">
-                    Restaurant
-                </a>
-            </div>
-
-            <div class="hidden md:block col-span-2 xl:hidden"></div>
-            <div class="hidden xl:block col-span-4"></div>
-            <div class="flex justify-end">
-                <a href="https://www.facebook.com"><img class="w-5 mr-1" src="/src/images/facebook.svg" alt="fb"></a>
-            </div>
-            <div class="flex justify-center">
-                <a href="https://www.instagram.com"><img class="w-5 mr-1" src="/src/images/instagram.svg" alt="insta"></a>
-            </div>
+<body class="bg-orange-700">
+  <header>
+    <div class="bg-black grid sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 p-2">
+        <div class="col-span-1 flex justify-center">
+            <a class="font-bold text-xl text-white" href="/restaurant-css-framework-vite/index.html">
+                Welcome
+            </a>
         </div>
-    </header>
-    <div class="text-white flex justify-center min-h-full pt-5">
-        <form action="/submit-form" method="post">
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="last-name">Last Name :</label>
-                <input class="rounded-lg" type="text">
-            </div>
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="first-name">First Name :</label>
-                <input class="rounded-lg" type="text">
-            </div>
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="mail">E-mail :</label>
-                <input class="rounded-lg" type="text">
-            </div>
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="subject">Subject :</label>
-                <select class="text-black rounded-lg text-center" name="" id="">
-                    <option value="">La bouffe</option>
-                    <option value="">Le Personnel</option>
-                    <option value="">collaboration</option>
-                </select>
-            </div>
-            <div class="p-2 grid grid-cols-2">
-                <label class="font-bold" for="message">Message :</label>
-                <input class="rounded-lg h-32" type="text">
-            </div>
-            <button class="p-4 mt-5 font-bold border-4 rounded-lg w-full">
-                Send
-            </button>
-        </form>
+        <div class="col-span-1 flex justify-center">
+            <a class="font-bold text-xl text-white" href="/restaurant-css-framework-vite/src/html/Menu.html">
+                Menu
+            </a>
+        </div>
+        <div class="col-span-1 flex justify-center">
+            <a class="font-bold text-xl text-white" href="/restaurant-css-framework-vite/src/html/Pictures.html">
+                Pictures
+            </a>
+        </div>
+        <div class="col-span-1 flex justify-center">
+            <a class="font-bold text-xl text-white" href="/restaurant-css-framework-vite/src/html/Restaurant.html">
+                Restaurant
+            </a>
+        </div>
+    </div>
+</header>
+      <div class="xl:mx-60 2xl:mx-96">
+        <div class="text-white flex justify-center min-h-full pt-5">
+            <form action="/submit-form" method="post">
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold text-black" for="last-name">Last Name :</label>
+                    <input class="rounded-lg" type="text">
+                </div>
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold text-black" for="first-name">First Name :</label>
+                    <input class="rounded-lg" type="text">
+                </div>
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold  text-black" for="mail">E-mail :</label>
+                    <input class="rounded-lg" type="text">
+                </div>
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold text-black" for="subject">Subject :</label>
+                    <select class="text-black rounded-lg text-center" name="" id="">
+                        <option value="">La bouffe</option>
+                        <option value="">Le Personnel</option>
+                        <option value="">collaboration</option>
+                    </select>
+                </div>
+                <div class="p-2 grid grid-cols-2">
+                    <label class="font-bold text-black" for="message">Message :</label>
+                    <input class="rounded-lg h-32 text-black" type="text">
+                </div>
+                <button class="p-4 mt-5 font-bold border-4 rounded-lg border-black w-full text-black bg-red-800">
+                    <a href="https://cheh.com">Send</a>
+                </button>
+            </form>
+        </div>
     </div>
 </body>
 
